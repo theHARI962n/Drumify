@@ -13,7 +13,7 @@ You can access the live project here: [Drum Kit Demo](#)
 
 ## Screenshots
 ![Drum Kit Screenshot](images/demo-screenshot.png)  
-(*Replace `demo-screenshot.png` with the actual screenshot image path.*)
+
 
 ## Tech Stack
 - **HTML**: Structure of the web page.
