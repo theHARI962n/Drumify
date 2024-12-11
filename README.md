@@ -19,3 +19,4 @@ You can access the live project here: [Drum Kit Demo](#)
 - **HTML**: Structure of the web page.
 - **CSS**: Styling for the drum buttons and animations.
 - **JavaScript**: Logic for sound playback
+
