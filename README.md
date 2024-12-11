@@ -8,8 +8,8 @@ This is a fun and interactive **Drum Kit** web application where users can play 
 - Visual animation for pressed keys or buttons.
 
 ## Live Demo
-You can access the live project here: [Drum Kit Demo](#)  
-(*Replace `#` with your live project URL once hosted, e.g., GitHub Pages or Netlify.*)
+You can access the live project here: will deploy soon
+
 
 ## Screenshots
 ![Drum Kit Screenshot](images/demo-screenshot.png)  
