@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="title">Drumify 🥁</h1>
+
+  <div class="volume">
+    <label for="volume-control" class="volume-label">Volume: <span id="volume-label">100%</span></label>
+    <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+  </div>
+  
+  <div class="controls">
+    <button id="record-btn" class="control-btn">Record</button>
+    <button id="play-btn" class="control-btn" disabled>Play</button>
+    <!-- Button to Generate Random Beat -->
+    <button id="beat-btn">Generate Beat</button>
+
+  </div>
+  
+
+  <div class="set">
+    <button class="w drum">w</button>
+    <button class="a drum">a</button>
+    <button class="s drum">s</button>
+    <button class="d drum">d</button>
+    <button class="j drum">j</button>
+    <button class="k drum">k</button>
+    <button class="l drum">l</button>
+  </div>
+
+
+  <script src="index.js" charset="utf-8"></script>
+  
+</body>
+<footer>
+  Made with ❤️ by Hari Haran R.
+</footer>
+
+</html>

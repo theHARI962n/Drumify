@@ -1,0 +1,274 @@
+/* General Body Styling */
+body {
+  text-align: center;
+  background: radial-gradient(circle, #1b1b1b, #0f0f0f); /* Subtle gradient for depth */
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 4.5rem;
+  color: #ff6b6b; /* Vibrant accent color */
+  text-shadow: 0 0 10px #ff6b6b, 0 0 30px #ff4444;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  animation: pulse 2s infinite;
+}
+
+/* Pulse Animation for Header */
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff6b6b, 0 0 30px #ff4444;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff4444, 0 0 40px #ff2222;
+  }
+}
+
+/* Footer Styling */
+footer {
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Drum Buttons Styling */
+.drum {
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  margin: 15px;
+  background: linear-gradient(145deg, #232323, #0f0f0f); /* 3D effect */
+  box-shadow: 5px 5px 15px #000000, -5px -5px 15px #2a2a2a;
+  transition: all 0.2s ease;
+}
+
+/* Interactive Effects for Drum Buttons */
+.drum:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff6b6b, inset 0 0 10px #ff4444;
+}
+
+.pressed {
+  transform: scale(0.95);
+  box-shadow: 0 0 20px #ff4444, inset 0 0 10px #800000;
+  background: linear-gradient(145deg, #0f0f0f, #232323); /* Reversed gradient */
+}
+
+/* Responsive Set Styling */
+.set {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation for the Set */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Volume Control Styling */
+
+
+/* Volume Control Styling */
+.volume {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  margin: 20px 0;
+  text-shadow: 0 0 5px rgba(255, 107, 107, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume-label {
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+#volume-control {
+  width: 300px;
+  appearance: none;
+  background: linear-gradient(to right, #ff6b6b 50%, #ccc 50%);
+  height: 8px;
+  border-radius: 10px;
+  outline: none;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#volume-control::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px #ff6b6b, inset 0 0 5px #000;
+  cursor: pointer;
+}
+
+#volume-control::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px #ff6b6b, inset 0 0 5px #000;
+  cursor: pointer;
+}
+
+/* Control Buttons Styling (Record/Play) */
+.controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.control-btn {
+  background: linear-gradient(145deg, #2e2e2e, #1b1b1b);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.control-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff6b6b;
+}
+
+.control-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+#beat-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#beat-btn:hover {
+  background-color: #45a049;
+}
+
+
+/* .volume {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  margin: 20px 0;
+  text-shadow: 0 0 5px rgba(255, 107, 107, 0.8);
+}
+
+#volume-control {
+  width: 300px;
+  appearance: none; 
+  background: linear-gradient(to right, #ff6b6b 50%, #ccc 50%);
+  height: 8px;
+  border-radius: 10px;
+  outline: none;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#volume-control::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff6b6b; 
+  border: 2px solid #000;
+  box-shadow: 0 0 10px #ff6b6b, inset 0 0 5px #000;
+  cursor: pointer;
+}
+
+#volume-control::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px #ff6b6b, inset 0 0 5px #000;
+  cursor: pointer;
+} */
+
+/* Drum Background Patterns */
+.w, .a, .s, .d, .j, .k, .l {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.w {
+  background-image: url("images/tom1-metal.png");
+}
+
+.a {
+  background-image: url("images/tom2-metal.png");
+}
+
+.s {
+  background-image: url("images/tom3-metal.png");
+}
+
+.d {
+  background-image: url("images/tom4-metal.png");
+}
+
+.j {
+  background-image: url("images/snare-metal.png");
+}
+
+.k {
+  background-image: url("images/crash-metal.png");
+}
+
+.l {
+  background-image: url("images/kick-metal.png");
+}
